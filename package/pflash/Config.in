@@ -1,0 +1,5 @@
+config BR2_PACKAGE_PFLASH
+	bool "pflash"
+	depends on BR2_PACKAGE_SYSTEMD
+	help
+	  Open-Power pflash tool

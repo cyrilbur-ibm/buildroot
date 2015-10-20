@@ -4,10 +4,9 @@
 #
 #################################################################################
 
-PFLASH_VERSION = skiboot-5.1.7
-PFLASH_SOURCE = $(PFLASH_VERSION).tar.gz
 PFLASH_LICENCE = Apache
-PFLASH_SITE = https://github.com/open-power/skiboot/archive/
+PFLASH_VERSION = skiboot-5.1.7
+PFLASH_SITE = $(call github,open-power,skiboot,$(PFLASH_VERSION))
 
 #Oddity in the pflash building means make needs to be called twice,
 #Really we have to establish all the symlinks first. Patches welcome

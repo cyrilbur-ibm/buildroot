@@ -1,0 +1,5 @@
+config BR2_PACKAGE_BTBRIDGED
+	bool "btbridged"
+	depends on BR2_PACKAGE_SYSTEMD
+	help
+	  BT Interface bridge for IPMI messages
